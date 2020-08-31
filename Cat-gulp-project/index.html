@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Котейка</title>
+</head>
+<body>
+    <header class="header header-padding">
+    <div class="header__content header__content-padding wrapper">
+        <div class="header__logo">
+            <img src="/img/icons/icons.svg#logo" class="svg-logo-dims" alt="logo"/>
+        </div>
+        <div class="header__menu">
+            <nav>
+                <ul>
+                    <li class="header__list" data-text="Почему мы?">Почему мы?</li>
+                    <li class="header__list" data-text="Номера">Номера</li>
+                    <li class="header__list" data-text="Отзывы">Отзывы</li>
+                    <li class="header__list" data-text="Как нас найти">Как нас найти</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__button">
+            <input type="checkbox" id="checkbox" class="checkbox visually-hidden">
+            <label for="checkbox" class="open-menu">
+                <div class="hamburger hamburger-btn">
+                    <span class="bar bar1"></span>
+                    <span class="bar bar2"></span>
+                    <span class="bar bar3"></span>
+                    <span class="bar bar4"></span>
+                </div>
+            </label>
+        </div>
+    </div>
+</header>
+
+    <main class="main main-margin">
+    <div class="main main-padding wrapper">
+        <h1 class="main__title">Наши номера</h1>
+        <div class="select" tabindex="1">
+            <input name="test" type="radio" id="sort-max-size" checked>
+            <label for="sort-max-size" class="select__option sort-size-up">
+                <img src="img/icons/icons.svg#up_arrow" class="svg-up_arrow-dims" alt="up_arrow"/>
+                По площади
+            </label>
+            <input name="test" type="radio" id="sort-min-size">
+            <label for="sort-min-size" class="select__option sort-size-down">
+                <img src="img/icons/icons.svg#arrow_to_down" class="svg-arrow_to_down-dims" alt="arrow_to_down"/>
+                По площади
+            </label>
+            <input name="test" type="radio" id="sort-max-price">
+            <label for="sort-max-price" class="select__option sort-price-up">
+                <img src="img/icons/icons.svg#up_arrow" class="svg-up_arrow-dims" alt="up_arrow"/>
+                По цене
+            </label>
+            <input name="test" type="radio" id="sort-min-price">
+            <label for="sort-min-price" class="select__option sort-price-down">
+                <img src="img/icons/icons.svg#arrow_to_down" class="svg-arrow_to_down-dims" alt="arrow_to_down"/>
+                По цене
+            </label>
+        </div>
+        <div class="main__content">
+            <div class="main__filter-block">
+                <div class="main__filter-container">
+                    <div class="main__filter">
+                        <div class="filter-block filter-block-margin">
+                            <div class="filter-block__title">Цена за сутки,₽</div>
+                            <div class="filter-block__filter">
+                                <div class="filter-block__input">
+                                    <input type="text" id="min-price">
+                                    <label for="min-price">от </label>
+                                </div>
+                                <div class="filter-block__input">
+                                    <input type="text" id="max-price"/>
+                                    <label for="max-price">до </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__filter">
+                        <div class="filter-block filter-block-margin">
+                            <div class="filter-block__title">Площадь</div>
+                            <div class="filter-block__filter filter-block__filter-column filter-size">
+                                <div class="filter-block__checkbox">
+                                    <input type="checkbox" id="checkbox-1" data-group="size-0.63"/>
+                                    <label for="checkbox-1">0,63 м2</label>
+                                </div>
+                                <div class="filter-block__checkbox">
+                                    <input type="checkbox" id="checkbox-2" data-group="size-0.90"/>
+                                    <label for="checkbox-2">0,90 м2</label>
+                                </div>
+                                <div class="filter-block__checkbox">
+                                    <input type="checkbox" id="checkbox-3" data-group="size-1.13"/>
+                                    <label for="checkbox-3">1,13 м2</label>
+                                </div>
+                                <div class="filter-block__checkbox">
+                                    <input type="checkbox" id="checkbox-4" data-group="size-1.56"/>
+                                    <label for="checkbox-4">1,56 м2</label>
+                                </div>
+                                <div class="filter-block__checkbox">
+                                    <input type="checkbox" id="checkbox-5" data-group="size-2.56"/>
+                                    <label for="checkbox-5">2,56 м2</label>
+                                </div>
+                                <div class="filter-block__checkbox">
+                                    <input type="checkbox" id="checkbox-6" data-group="size-2.88"/>
+                                    <label for="checkbox-6">2,88 м2</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__filter">
+                        <div class="filter-block filter-block-margin">
+                            <div class="filter-block__title">Оснащение номера</div>
+                            <div class="filter-block__filter">
+                                <div class="filter-block__filter filter-block__filter-column filter-room">
+                                    <div class="filter-block__checkbox">
+                                        <input type="checkbox" id="empty" data-group="empty">
+                                        <label for="empty">Пустой номер</label>
+                                    </div>
+                                    <div class="filter-block__checkbox">
+                                        <input type="checkbox" id="sunbed" data-group="sunbed"/>
+                                        <label for="sunbed">Лежак</label>
+                                    </div>
+                                    <div class="filter-block__checkbox">
+                                        <input type="checkbox" id="scratching-post" data-group="scratching_post"/>
+                                        <label for="scratching-post">Когтеточка</label>
+                                    </div>
+                                    <div class="filter-block__checkbox">
+                                        <input type="checkbox" id="game-complex" data-group="game_complex"/>
+                                        <label for="game-complex">Игровой-комплекс</label>
+                                    </div>
+                                    <div class="filter-block__checkbox">
+                                        <input type="checkbox" id="house" data-group="house"/>
+                                        <label for="house">Домик</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__filter">
+                    <div class="filter-block filter-block-btn">
+                        <button class="btn btn-yellow-btn btn-apply">Применить</button>
+                        <button class="btn btn-shadow btn-throw deactivate">Сбросить фильтр</button>
+                    </div>
+                </div>
+            </div>
+            <div class="main__card-block" id="cards">
+                <div class="card card-margin">
+                    <div class="card__img">
+                        <img src="/img/cat-1.jpg" class="img-cat" alt="cat"/>
+                    </div>
+                    <div class="card__info">
+                        <h2 class="card__title"></h2>
+                        <div class="card__params">
+                            <div class="card__size">
+                                <p>Размеры (ШхГхВ) - <span class="size"></span> см</p>
+                            </div>
+                            <div class="card__area">
+                                <p>Площадь - <span class="area"></span> м2</p>
+                            </div>
+                            <div class="card__equipment">
+                                <p>Оснащение номера</p>
+                                <img src="/img/icons/icons.svg#empty" class="svg-empty-dims equipment-1" alt="empty"/>
+                                <img src="/img/icons/icons.svg#empty" class="svg-empty-dims equipment-2" alt="empty"/>
+                                <img src="/img/icons/icons.svg#empty" class="svg-empty-dims equipment-3" alt="empty"/>
+                                <img src="/img/icons/icons.svg#empty" class="svg-empty-dims equipment-4" alt="empty"/>
+                            </div>
+                            <div class="card__price">
+                                <p>Цена за сутки: <span class="price"></span><span>₽</span></p>
+                            </div>
+                            <button class="btn btn-reservation">Забронировать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <footer class="footer footer-padding">
+    <div class="footer__container wrapper">
+    <span>
+        <img src="img/icons/icons.svg#vector" class="svg-vector-dims" alt="icon"/>
+        2020 Все права защищены
+    </span>
+    <span>Политика конфиденциальности</span>
+    <span>Сделано в <span class="footer__container-black-text">Koteyka_Production</span></span>
+    </div>
+</footer>
+
+    <script src="js/script.min.js"></script>
+</body>
+</html>

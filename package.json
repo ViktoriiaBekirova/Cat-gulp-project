@@ -1,0 +1,52 @@
+{
+  "name": "Cat-gulp-project",
+  "version": "1.0.0",
+  "description": "Котейка",
+  "author": "Viktoriia Bekirova",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-file-include": "^2.2.2",
+    "gulp-fonter": "^0.3.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-ttf2woff": "^1.1.1",
+    "gulp-ttf2woff2": "^3.0.0",
+    "gulp-uglify-es": "^2.0.0",
+    "@htmlacademy/editorconfig-cli": "1.x",
+    "stylelint": "9.10.x",
+    "stylelint-config-htmlacademy": "0.1.x",
+    "eslint": "4.16.0",
+    "eslint-config-htmlacademy": "0.4.x"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"#src/scss/**/*.scss\" --syntax scss",
+    "test": "npm run editorconfig && npm run stylelint && eslint #src/js/",
+    "svgSprite": "gulp svgSprite",
+    "fonts": "gulp fonts",
+    "otf2ttf": "gulp otf2ttf"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "#src/*.html",
+    "#src/js/**/*.js",
+    "#src/img/**/*.svg",
+    "#src/scss/**/*.scss"
+  ],
+  "dependencies": {
+    "del": "^5.1.0"
+  }
+}

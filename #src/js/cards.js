@@ -1,0 +1,62 @@
+let data = [{
+    "image_img": "/img/cat-1.jpg",
+    "image_title": "Эконом",
+    "card_size": "",
+    "card__area": "0,63",
+    "card__equipment1": "/img/icons/icons.svg#empty",
+    "card__equipment2": "",
+    "card__equipment3": "",
+    "card__equipment4": "",
+    "card__price": "100"
+}, {
+    "image_img": "/img/cat-2.jpg",
+    "image_title": "Эконом плюс",
+    "card_size": "90х100х180",
+    "card__area": "0,90",
+    "card__equipment1": "/img/icons/icons.svg#sunbed",
+    "card__equipment2": "/img/icons/icons.svg#scratching_post",
+    "card__equipment3": "",
+    "card__equipment4": "",
+    "card__price": "200"
+}, {
+    "image_img": "/img/cat-3.jpg",
+    "image_title": "Комфорт",
+    "card_size": "100х125х180",
+    "card__area": "1,13",
+    "card__equipment1": "/img/icons/icons.svg#sunbed",
+    "card__equipment2": "/img/icons/icons.svg#scratching_post",
+    "card__equipment3": "/img/icons/icons.svg#game_complex",
+    "card__equipment4": "",
+    "card__price": "250"
+}, {
+    "image_img": "/img/cat-4.jpg",
+    "image_title": "Сьют",
+    "card_size": "125х125х180",
+    "card__area": "1,56",
+    "card__equipment1": "/img/icons/icons.svg#sunbed",
+    "card__equipment2": "/img/icons/icons.svg#scratching_post",
+    "card__equipment3": "/img/icons/icons.svg#game_complex",
+    "card__equipment4": "",
+    "card__price": "350",
+    "filter__size": "size-1.56"
+}, {
+    "image_img": "/img/cat-5.jpg",
+    "image_title": "Люкс",
+    "card_size": "160х160х180",
+    "card__area": "2,56",
+    "card__equipment1": "/img/icons/icons.svg#sunbed",
+    "card__equipment2": "/img/icons/icons.svg#scratching_post",
+    "card__equipment3": "/img/icons/icons.svg#game_complex",
+    "card__equipment4": "/img/icons/icons.svg#house",
+    "card__price": "500"
+}, {
+    "image_img": "/img/cat-6.jpg",
+    "image_title": "Супер-Люкс",
+    "card_size": "180х160х180",
+    "card__area": "2,88",
+    "card__equipment1": "/img/icons/icons.svg#sunbed",
+    "card__equipment2": "/img/icons/icons.svg#scratching_post",
+    "card__equipment3": "/img/icons/icons.svg#game_complex",
+    "card__equipment4": "/img/icons/icons.svg#house",
+    "card__price": "600"
+}]
